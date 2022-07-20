@@ -1,4 +1,6 @@
 
+
+
 let getComputerChoice=()=>{
     let index=Math.floor(Math.random()*3)+1;
     switch(index)
@@ -40,4 +42,12 @@ let playGame=()=>{
     }
     
 }
-playGame();
+
+
+
+
+let game=()=>{
+    for(let i=0;i<5;i++)
+    setTimeout(playGame(),2000) ;
+}
+game();
